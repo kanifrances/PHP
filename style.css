@@ -1,0 +1,13 @@
+body{
+    background-color: beige;
+}
+.list {
+    
+        display: grid;
+        grid-gap: -28px;
+        grid-template-rows: 67px 200px;
+        grid-auto-flow: column;
+        grid-auto-columns: 229px;
+       
+    
+  }
