@@ -23,6 +23,12 @@
 		// Add \n to add a breakline for each list item.
 		// Also remove the whitespaces since we do not need them.
 		// Tabbing the code so it is more readable
+		
+		/**
+		 * use this line to remove the spaces on the text
+		 * when the string is broken down at the comma level
+		 */
+		$str = str_replace( ' ', '', $str);
 		echo "<li>$str</li> \n";
 	}
 ?>
@@ -39,6 +45,12 @@
 		// Add \n to add a breakline for each list item.
 		// Also remove the whitespaces since we do not need them.
 		// Tabbing the code so it is more readable
+		
+		/**
+		 * use this line to remove the spaces on the text
+		 * when the string is broken down at the comma level
+		 */
+		$str = str_replace( ' ', '', $str);
 		echo "<li>$str</li> \n";
 	}
 
