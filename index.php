@@ -1,4 +1,6 @@
+<?php
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,37 +11,28 @@
 	<title>Lists</title>
 </head>
 <body>
+	<div class = "list">
+		<h2>Ordered List items</h2>
+			<ol>
+				<?php
+					$items  = "shoes, tie, shirt, shorts, blouse";
+					$values =  explode(",",$items);
+					foreach ($values as $str) {
+					echo "<li> $str </li> \n";
+					}
+				?>
+			</ol>
+		<h2>Unordered List items</h2>
+			<ul>
+				<?php
+					$items  = "shoes, tie, shirt, shorts, blouse";
+					$values =  explode(",",$items);
+					foreach ($values as $str) {
+					echo "<li> $str </li>\n";
 
-<div class = "list">
-<h2>Ordered List items</h2>
-<ol>
-
-<?php
-
-$items  = "shoes, tie, shirt, shorts, blouse";
-$values =  explode(",",$items);
-foreach ($values as $str) {
-echo "<li> $str </li>";
-
-}
-
-?>
-</ol>
-
-<h2>Unordered List items</h2>
-<ul>
-
-<?php
-
-$items  = "shoes, tie, shirt, shorts, blouse";
-$values =  explode(",",$items);
-foreach ($values as $str) {
-echo "<li> $str </li>";
-
-}
-
-?>
-</ul>
+					}
+				?>
+			</ul>
 
 </div>
 </body>
