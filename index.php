@@ -1,4 +1,6 @@
-
+<?php
+// All PHP pages begin with the opening PHP line <?php. Close it to write HTML.
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +17,14 @@
 <ol>
 
 <?php
-
-$items  = "shoes, tie, shirt, shorts, blouse";
-$values =  explode(",",$items);
-foreach ($values as $str) {
-echo "<li> $str </li>";
-
-}
-
+	$items  = "shoes, tie, shirt, shorts, blouse";
+	$values =  explode(",",$items);
+	foreach ($values as $str) {
+		// Add \n to add a breakline for each list item.
+		// Also remove the whitespaces since we do not need them.
+		// Tabbing the code so it is more readable
+		echo "<li>$str</li> \n";
+	}
 ?>
 </ol>
 
@@ -31,12 +33,14 @@ echo "<li> $str </li>";
 
 <?php
 
-$items  = "shoes, tie, shirt, shorts, blouse";
-$values =  explode(",",$items);
-foreach ($values as $str) {
-echo "<li> $str </li>";
-
-}
+	$items  = "shoes, tie, shirt, shorts, blouse";
+	$values =  explode(",",$items);
+	foreach ($values as $str) {
+		// Add \n to add a breakline for each list item.
+		// Also remove the whitespaces since we do not need them.
+		// Tabbing the code so it is more readable
+		echo "<li>$str</li> \n";
+	}
 
 ?>
 </ul>
